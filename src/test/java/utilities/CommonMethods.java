@@ -338,5 +338,14 @@ public class CommonMethods extends PageInitializer{
 			}
 		}
 	}
+	public static void switchToFrameByName1(String nameOrId) {
+
+        try {
+            Driver.getDriver().switchTo().frame(nameOrId);
+        } catch (NoSuchFrameException e) {
+            e.printStackTrace();
+        }
+
+    }
     
 }
