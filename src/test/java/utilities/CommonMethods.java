@@ -338,5 +338,15 @@ public class CommonMethods extends PageInitializer{
 			}
 		}
 	}
+	public static void selectCalendarDate1(List<WebElement> element, String text) {
+		for (WebElement pickDate : element) {
+			if (pickDate.isEnabled()) {
+				if (pickDate.getText().equals(text)) {
+					pickDate.click();
+					break;
+				}
+			}
+		}
+	}
     
 }
