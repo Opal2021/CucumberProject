@@ -27,7 +27,7 @@ Background:
 
 When: A user navigates to My Account tab 
 And : A user is able to change the info in address fields box to <5678>
-Then: A user should successfully verify a message "Your details has been save"
+Then: A user should successfully verify a message Your details has been save
 
  Scenario: Verify radio button is selected in Filter session on Web Orders Tap.
 
@@ -38,7 +38,7 @@ Then: A user is able to verify if Order Number is selected
 
 When: A user is navigates to Favorite Tab.
 And:  A user enters part number in the fields.
-Then: A user successfully verifies a message "Product Added Successfully" 
+Then: A user successfully verifies a message Product Added Successfully
  
  
   #@tag2
