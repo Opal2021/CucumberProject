@@ -10,7 +10,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "A user is able to login with a valid username/password",
@@ -20,7 +20,7 @@ formatter.match({
   "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "name": "Verify the  information in Billing session that successfully save",
@@ -35,7 +35,7 @@ formatter.match({
   "location": "CCB_300_MyAccountFunctionality.a_user_navigates_to_My_Account_tab()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "A user is able to change the info in address fields box to \"5678\"",
@@ -45,7 +45,7 @@ formatter.match({
   "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_change_the_info_in_address_fields_box_to(String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "A user should successfully verify a message Your details has been save",
@@ -55,10 +55,10 @@ formatter.match({
   "location": "CCB_300_MyAccountFunctionality.a_user_should_successfully_verify_a_message_Your_details_has_been_save()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "name": "",
@@ -66,7 +66,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "A user is able to login with a valid username/password",
@@ -76,7 +76,7 @@ formatter.match({
   "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "name": "Verify radio button is selected in Filter session on Web Orders Tap.",
@@ -91,7 +91,7 @@ formatter.match({
   "location": "CCB_300_MyAccountFunctionality.a_user_is_navigate_to_Orders_Tab()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "A user is able to verify if Order Number is selected",
@@ -101,10 +101,10 @@ formatter.match({
   "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_verify_if_Order_Number_is_selected()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "name": "",
@@ -112,7 +112,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "A user is able to login with a valid username/password",
@@ -122,7 +122,7 @@ formatter.match({
   "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "name": "Verify adding favorite part number on Favorites Tap successfully.",
@@ -137,7 +137,7 @@ formatter.match({
   "location": "CCB_300_MyAccountFunctionality.a_user_is_navigates_to_Favorite_Tab()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "A user enters part number in the fields.",
@@ -147,7 +147,7 @@ formatter.match({
   "location": "CCB_300_MyAccountFunctionality.a_user_enters_part_number_in_the_fields()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "A user successfully verifies a message Product Added Successfully",
@@ -157,30 +157,157 @@ formatter.match({
   "location": "CCB_300_MyAccountFunctionality.a_user_successfully_verifies_a_message_Product_Added_Successfully()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.uri("src/test/resources/feature/CCB_400_HomePageFunctionality.feature");
 formatter.feature({
-  "name": "Verify function Home Page.",
+  "name": "Verify function Home Page",
   "description": "",
   "keyword": "Feature"
 });
 formatter.background({
   "name": "",
-  "description": "  Given: A user is able to login with a valid username/password.",
+  "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "A user is able to login with a valid username/password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "Verify home page has four sliders only",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "A user navigates to the scroll button on right side",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "A user is able to see our slides",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "A user is assert Home page has four sliders only",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.after({
+  "status": "skipped"
 });
 formatter.background({
   "name": "",
-  "description": "  Given: A user is able to login with a valid username/password.",
+  "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "A user is able to login with a valid username/password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "Verify home page has five images under sliders",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "A user is navigate to the images",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "A user is able to see the images",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.after({
+  "status": "skipped"
 });
 formatter.background({
   "name": "",
-  "description": "  Given: A user is able to login with a valid username/password.",
+  "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "A user is able to login with a valid username/password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "Verify send a keyword to the keywords successfully",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "A user is send key to the keyword field \"BIKE\"",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "A user enters item on that page",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "A user successfully verifies a message XFORM Fitness BK70 Spin Bike",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.after({
+  "status": "skipped"
 });
 });
