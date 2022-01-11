@@ -24,16 +24,16 @@
   Scenario: Verify home page has four sliders only
   When: A user navigates to the scroll button on right side
   And: A user is able to see our slides
-  Then: A user is assert "Home page has four sliders only"
+  Then: A user is assert Home page has four sliders only
     
   Scenario: Verify home page has five images under sliders.
   When: A user is navigate to the images
   Then: A user is able to see the images
 
   Scenario: Verify send a keyword to the keywords successfully.
-  When: A user is send key to the keyword field "BIKE"
+  When: A user is send key to the keyword field <BIKE>
   And: A user enters item on that page
-  Then: A user successfully verifies a message "XFORM Fitness BK70 Spin Bike" .
+  Then: A user successfully verifies a message XFORM Fitness BK70 Spin Bike.
   
 
    

@@ -1,4 +1,4 @@
-package Runners;
+package runners;
 
 import org.junit.runner.RunWith;
 
@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
 			"html: target/default-cucumber-reports",
 			"json:target/cucumber.json"
 		},
-		features = "src/test/resources/features/",
+		features = "src/test/resources/feature/",
 		glue     = "stepDefinitions",
 		dryRun   = false
 		//tags     = "@SmokeTest"
