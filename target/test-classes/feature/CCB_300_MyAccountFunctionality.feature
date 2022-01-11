@@ -16,27 +16,38 @@
 
 ## (Comments)
 #Sample Feature Definition Template
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
 
-  @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
+Feature: Verify fucntion and data on MyAccount tab
 
-  @tag2
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
+Background: 
 
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+ Given: A user is able to login with a valid username/password
+ 
+  Scenario: Verify the  information in Billing session that successfully save
+
+When: A user navigates to My Account tab 
+And : A user is able to change the info in address fields box to <5678>
+Then: A user should successfully verify a message "Your details has been save"
+
+ Scenario: Verify radio button is selected in Filter session on Web Orders Tap.
+
+When: A user is navigate to Orders Tab
+Then: A user is able to verify if Order Number is selected
+ 
+ Scenario: Verify adding favorite part number on Favorites Tap successfully.
+
+When: A user is navigates to Favorite Tab.
+And:  A user enters part number in the fields.
+Then: A user successfully verifies a message "Product Added Successfully" 
+ 
+ 
+  #@tag2
+  #Scenario Outline: Title of your scenario outline
+    #Given I want to write a step with <name>
+    #When I check for the <value> in step
+    #Then I verify the <status> in step
+#
+    #Examples: 
+      #| name  | value | status  |
+      #| name1 |     5 | success |
+      #| name2 |     7 | Fail    |
