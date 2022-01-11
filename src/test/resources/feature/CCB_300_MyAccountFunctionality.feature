@@ -16,29 +16,32 @@
 
 ## (Comments)
 #Sample Feature Definition Template
+##################START FEATURE#########################
 
-Feature: Verify fucntion and data on MyAccount tab
+Feature: Verify function and data on MyAccount tab
 
 Background: 
 
- Given: A user is able to login with a valid username/password
+ 		Given A user is able to login with a valid username/password
  
-  Scenario: Verify the  information in Billing session that successfully save
+Scenario: Verify the  information in Billing session that successfully save
 
-When: A user navigates to My Account tab 
-And : A user is able to change the info in address fields box to <5678>
-Then: A user should successfully verify a message Your details has been save
+		When A user navigates to My Account tab 
+		And  A user is able to change the info in address fields box to "5678"
+		Then A user should successfully verify a message Your details has been save
 
- Scenario: Verify radio button is selected in Filter session on Web Orders Tap.
+Scenario: Verify radio button is selected in Filter session on Web Orders Tap.
 
-When: A user is navigate to Orders Tab
-Then: A user is able to verify if Order Number is selected
+		When A user is navigate to Orders Tab
+		Then A user is able to verify if Order Number is selected
  
- Scenario: Verify adding favorite part number on Favorites Tap successfully.
+Scenario: Verify adding favorite part number on Favorites Tap successfully.
 
-When: A user is navigates to Favorite Tab.
-And:  A user enters part number in the fields.
-Then: A user successfully verifies a message Product Added Successfully
+		When A user is navigates to Favorite Tab.
+		And  A user enters part number in the fields.
+		Then A user successfully verifies a message Product Added Successfully
+ 
+ ##################END FEATURE#########################
  
  
   #@tag2
@@ -51,3 +54,10 @@ Then: A user successfully verifies a message Product Added Successfully
       #| name  | value | status  |
       #| name1 |     5 | success |
       #| name2 |     7 | Fail    |
+
+      
+   
+      
+     
+      
+      
