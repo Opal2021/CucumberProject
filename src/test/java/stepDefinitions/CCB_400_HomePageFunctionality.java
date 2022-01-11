@@ -1,4 +1,4 @@
-package StepDefinitions;
+package stepDefinitions;
 
 public class CCB_400_HomePageFunctionality {
 //	DarimaTest
