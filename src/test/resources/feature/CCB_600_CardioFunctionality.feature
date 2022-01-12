@@ -23,7 +23,7 @@ Feature: Cardio Page functionality
 
 
 #Background:
-#	Given user is signed in with valid username and password
+# User is on the cardio page
 
 @tag6
   Scenario: Threadmill button Functonality

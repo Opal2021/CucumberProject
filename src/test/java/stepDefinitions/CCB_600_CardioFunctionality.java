@@ -1,11 +1,15 @@
 package stepDefinitions;
 
+import org.apache.http.util.Asserts;
+
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import junit.framework.Assert;
 import utilities.CommonMethods;
+import utilities.Driver;
 
 public class CCB_600_CardioFunctionality extends CommonMethods{
 	
@@ -14,17 +18,28 @@ public class CCB_600_CardioFunctionality extends CommonMethods{
 	@Given("user is on the cardio tab")
 	public void user_is_on_the_cardio_tab() {
 		CT.CardioTab.click();
-		CT.TreadmillPic.click();
 	}
 
 	@When("user clicks the treadmill picture")
 	public void user_clicks_the_treadmill_picture() {
-	 
+		CT.TreadmillPic.click();
+
 	}
 
 	@Then("user should be on the treadmill page")
 	public void user_should_be_on_the_treadmill_page() {
 
+		String expectedResult = "Fitness Avenue: Commercial and Home Treadmills";
+		String actualResult = Driver.getDriver().getTitle();
+		
+		
+		System.out.println( "This is the title : " + actualResult);
+		
+		Assert.assertEquals(expectedResult, actualResult);
+		
+		Driver.getDriver().navigate().back();
+
+		
 	}
 	
 	
@@ -32,7 +47,7 @@ public class CCB_600_CardioFunctionality extends CommonMethods{
 	
 	@Given("user is on the bikes page")
 	public void user_is_on_the_bikes_page() {
-		
+		CT.bikePic.click();
 	}
 
 	@When("adds first item of bike to the cart")

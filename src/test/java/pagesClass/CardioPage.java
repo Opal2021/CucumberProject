@@ -20,6 +20,11 @@ public class CardioPage {
 	@FindBy(xpath = "//*[@id=\"searchApp\"]/div[4]/div[2]/div[2]/a")
 	public WebElement TreadmillPic;
 	
+	@FindBy(xpath = "//*[title='Fitness Avenue: Commercial and Home Treadmills']")
+	public WebElement titlePage;
+	
+	@FindBy(xpath = "//*[@id=\"searchApp\"]/div[4]/div[1]/div[2]/a")
+	public WebElement bikePic;
 
 	
 }
