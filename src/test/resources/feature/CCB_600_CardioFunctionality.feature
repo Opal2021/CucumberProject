@@ -17,7 +17,10 @@
 ## (Comments)
 #Sample Feature Definition Template
 
+#//////////
+
 Feature: Cardio Page functionality
+
 
 #Background:
 #	Given user is signed in with valid username and password
@@ -39,6 +42,7 @@ Feature: Cardio Page functionality
     When user clicks on sort by 
     And changes the price to Asc
 		Then user should be able to see all bikes in ascending order
+		
   #Scenario Outline: Title of your scenario outline
     #Given I want to write a step with <name>
     #When I check for the <value> in step
