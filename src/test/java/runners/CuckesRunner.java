@@ -16,8 +16,8 @@ import cucumber.api.junit.Cucumber;
 		},
 		features = "src/test/resources/feature/",
 		glue     = "stepDefinitions",
-		dryRun   = true
-		//tags     = "@SmokeTest"
+		dryRun   = true//,
+	//	tags     = "@tag6" //"@SmokeTest"
 				
 )
 

@@ -1,5 +1,7 @@
 package pagesClass;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.Driver;
@@ -12,7 +14,12 @@ public class CardioPage {
 	}
 
 	
-	//@FindBy()
+	@FindBy(xpath = "//*[@id=\"main-menu-navigation-menu-collapse\"]/ng-include/ul/li[2]/a")
+	public WebElement CardioTab;
 	
+	@FindBy(xpath = "//*[@id=\"searchApp\"]/div[4]/div[2]/div[2]/a")
+	public WebElement TreadmillPic;
+	
+
 	
 }

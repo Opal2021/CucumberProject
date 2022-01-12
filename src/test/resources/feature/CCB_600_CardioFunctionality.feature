@@ -25,14 +25,14 @@ Feature: Cardio Page functionality
 #Background:
 #	Given user is signed in with valid username and password
 
-
+@tag6
   Scenario: Threadmill button Functonality
     Given user is on the cardio tab
     When user clicks the treadmill picture
 		Then user should be on the treadmill page
 
   Scenario: Add to cart button from Bike page
-    Given user is on the cardio tab
+    Given user is on the bikes page
     When user clicks the treadmill picture
 		And adds first item of bike to the cart
 		Then carts page should have the bike added
