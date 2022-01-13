@@ -18,18 +18,16 @@
 #Sample Feature Definition Template
 @SmokeTest
 Feature: Verify eBikes Functionality
-
-Background: A user is able to login with a valid username/password
-   
+ 
   @tag1
   Scenario: Verify user can add item to cart on eBikes page 
-    Given User is on ebikes page
+    Given User navigates to ebikes page
     When User clicks on Add to cart button 
     And User clicks on Checkout button
     Then User is on Shopping cart page
-    And Shopping cart contains an item
+   
   
-  @tag1
+  @tag2
   Scenario: Verify user can delete item from shopping cart  
     Given User is on ebikes page
     When User clicks on Add to cart button 
@@ -38,14 +36,14 @@ Background: A user is able to login with a valid username/password
     Then User accepts alert message
     And Shopping cart is empty 
     
-    @tag1
+    @tag2
   Scenario: Verify user cannot add to cart out-of-stock items  
     Given User is on ebikes page
     When User selects out of stock item   
     Then User cannot see add to card button   
    
    
-  @tag2
+
   Scenario Outline: Title of your scenario outline
     Given I want to write a step with <name>
     When I check for the <value> in step

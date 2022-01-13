@@ -17,11 +17,13 @@ import cucumber.api.junit.Cucumber;
 		features = "src/test/resources/feature/",
 		glue     = "stepDefinitions",
 		dryRun   = false,
-		tags     = "@tag6" //"@SmokeTest"
+		tags     = "@tag1" //"@SmokeTest"
 
 				
 )
 
 public class CuckesRunner {
-
+		
+		
+	
 }
