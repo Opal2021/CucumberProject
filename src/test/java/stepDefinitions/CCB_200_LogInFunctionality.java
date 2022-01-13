@@ -6,10 +6,11 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import utilities.CommonMethods;
 
-public class CCB_2000_LogInFunctionality extends CommonMethods {
+public class CCB_200_LogInFunctionality extends CommonMethods {
 	
 	@Given("User navigates to Fitness Avenue site")
 	public void user_navigates_to_Fitness_Avenue_site() {
+		
 	  
 	}
 
