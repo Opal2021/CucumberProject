@@ -27,7 +27,7 @@ public class CCB_600_CardioFunctionality extends CommonMethods{
 	}
 
 	@Then("user should be on the treadmill page")
-	public void user_should_be_on_the_treadmill_page() {
+	public void user_should_be_on_the_treadmill_page() throws InterruptedException {
 
 		String expectedResult = "Fitness Avenue: Commercial and Home Treadmills";
 		String actualResult = Driver.getDriver().getTitle();
@@ -37,18 +37,16 @@ public class CCB_600_CardioFunctionality extends CommonMethods{
 		
 		Assert.assertEquals(expectedResult, actualResult);
 		
-		Driver.getDriver().navigate().back();
-
-		
 	}
-	
-	
 	
 	
 	@Given("user is on the bikes page")
 	public void user_is_on_the_bikes_page() {
+		CT.CardioTab.click();
 		CT.bikePic.click();
+
 	}
+
 
 	@When("adds first item of bike to the cart")
 	public void adds_first_item_of_bike_to_the_cart() {
