@@ -16,40 +16,25 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@SmokeTest
-Feature: Verify eBikes Functionality
-
-Background: 
-   Given A user is able to login with a valid username/password
- 
-  @SmokeTest
-  Scenario: Verify user can add item to cart on eBikes page 
-    Given User is on ebikes page
-    When User clicks on Add to cart button 
-    And User clicks on Checkout button
-    Then User is on Shopping cart page
-    And Shopping cart contains an item
+@tag
+Feature: Verify Sign Up Functionality 
   
   @tag1
-  Scenario: Verify user can delete item from shopping cart  
-    Given User is on ebikes page 
-    When User clicks on Add to cart button 
-    And User clicks on Checkout button
-    And User removes item from Shopping cart
-    Then User accepts alert message
-    And Shopping cart is empty 
-    
-    @tag1
-  Scenario: Verify user cannot add to cart out-of-stock items  
-    Given User is on ebikes page
-    When User selects out of stock item   
-    Then User cannot see add to card button   
-   
-   
-   
-   
-   
-   
+  Scenario: User can register with valid email that was not registered before 
+    Given User is homepage  
+    When User enter valid email
+    And User enters password 
+    And User clicks on login button
+    Then User is on My Account page
+    And check more outcomes
+
+
+
+
+
+
+
+
   @tag2
   Scenario Outline: Title of your scenario outline
     Given I want to write a step with <name>

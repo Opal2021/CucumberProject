@@ -1,8 +1,13 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/CCB_300_MyAccountFunctionality.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/CCB_500_eBikesFunctionality.feature");
 formatter.feature({
-  "name": "Verify function and data on MyAccount tab",
+  "name": "Verify eBikes Functionality",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@SmokeTest"
+    }
+  ]
 });
 formatter.background({
   "name": "",
@@ -23,176 +28,28 @@ formatter.result({
   "status": "skipped"
 });
 formatter.scenario({
-  "name": "Verify the  information in Billing session that successfully save",
+  "name": "Verify user can add item to cart on eBikes page",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@SmokeTest"
+    },
+    {
+      "name": "@SmokeTest"
+    }
+  ]
 });
 formatter.step({
-  "name": "A user navigates to My Account tab",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_navigates_to_My_Account_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "A user is able to change the info in address fields box to \"5678\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_change_the_info_in_address_fields_box_to(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "A user should successfully verify a message Your details has been save",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_should_successfully_verify_a_message_Your_details_has_been_save()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "A user is able to login with a valid username/password",
+  "name": "User is on ebikes page",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "Verify radio button is selected in Filter session on Web Orders Tap.",
-  "description": "",
-  "keyword": "Scenario"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "A user is navigate to Orders Tab",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_is_navigate_to_Orders_Tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "A user is able to verify if Order Number is selected",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_verify_if_Order_Number_is_selected()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "A user is able to login with a valid username/password",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "Verify adding favorite part number on Favorites Tap successfully.",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "name": "A user is navigates to Favorite Tab.",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_is_navigates_to_Favorite_Tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "A user enters part number in the fields.",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_enters_part_number_in_the_fields()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "A user successfully verifies a message Product Added Successfully",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_successfully_verifies_a_message_Product_Added_Successfully()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.uri("src/test/resources/feature/CCB_400_HomePageFunctionality.feature");
-formatter.feature({
-  "name": "Verify function Home Page",
-  "description": "",
-  "keyword": "Feature"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "A user is able to login with a valid username/password",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "Verify home page has four sliders only",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "name": "A user navigates to the scroll button on right side",
+  "name": "User clicks on Add to cart button",
   "keyword": "When "
 });
 formatter.match({});
@@ -200,7 +57,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "A user is able to see our slides",
+  "name": "User clicks on Checkout button",
   "keyword": "And "
 });
 formatter.match({});
@@ -208,8 +65,16 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "A user is assert Home page has four sliders only",
+  "name": "User is on Shopping cart page",
   "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Shopping cart contains an item",
+  "keyword": "And "
 });
 formatter.match({});
 formatter.result({
@@ -237,54 +102,28 @@ formatter.result({
   "status": "skipped"
 });
 formatter.scenario({
-  "name": "Verify home page has five images under sliders",
+  "name": "Verify user can delete item from shopping cart",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@SmokeTest"
+    },
+    {
+      "name": "@tag1"
+    }
+  ]
 });
 formatter.step({
-  "name": "A user is navigate to the images",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "A user is able to see the images",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "A user is able to login with a valid username/password",
+  "name": "User is on ebikes page",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "Verify send a keyword to the keywords successfully",
-  "description": "",
-  "keyword": "Scenario"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "A user is send key to the keyword field \"BIKE\"",
+  "name": "User clicks on Add to cart button",
   "keyword": "When "
 });
 formatter.match({});
@@ -292,7 +131,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "A user enters item on that page",
+  "name": "User clicks on Checkout button",
   "keyword": "And "
 });
 formatter.match({});
@@ -300,7 +139,247 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "A user successfully verifies a message XFORM Fitness BK70 Spin Bike",
+  "name": "User removes item from Shopping cart",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User accepts alert message",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Shopping cart is empty",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.after({
+  "status": "skipped"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "A user is able to login with a valid username/password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "Verify user cannot add to cart out-of-stock items",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@SmokeTest"
+    },
+    {
+      "name": "@tag1"
+    }
+  ]
+});
+formatter.step({
+  "name": "User is on ebikes page",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User selects out of stock item",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User cannot see add to card button",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.after({
+  "status": "skipped"
+});
+formatter.scenarioOutline({
+  "name": "Title of your scenario outline",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tag2"
+    }
+  ]
+});
+formatter.step({
+  "name": "I want to write a step with \u003cname\u003e",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "I check for the \u003cvalue\u003e in step",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "I verify the \u003cstatus\u003e in step",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "name",
+        "value",
+        "status"
+      ]
+    },
+    {
+      "cells": [
+        "name1",
+        "5",
+        "success"
+      ]
+    },
+    {
+      "cells": [
+        "name2",
+        "7",
+        "Fail"
+      ]
+    }
+  ]
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "A user is able to login with a valid username/password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "Title of your scenario outline",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@SmokeTest"
+    },
+    {
+      "name": "@tag2"
+    }
+  ]
+});
+formatter.step({
+  "name": "I want to write a step with name1",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "I check for the 5 in step",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "I verify the success in step",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.after({
+  "status": "skipped"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "A user is able to login with a valid username/password",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "Title of your scenario outline",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@SmokeTest"
+    },
+    {
+      "name": "@tag2"
+    }
+  ]
+});
+formatter.step({
+  "name": "I want to write a step with name2",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "I check for the 7 in step",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "I verify the Fail in step",
   "keyword": "Then "
 });
 formatter.match({});
