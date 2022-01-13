@@ -19,9 +19,8 @@
 Feature: Verify LogIn Functionality
 
   Scenario: Verify log in functionality with valid credencials
-    Given Browser is open
-    And User navigates to Fitness Avenue site
-    And User click on login button
+    Given User navigates to Fitness Avenue site
+    And User click on login button on the top right
     When User enter valid email and password
     And User click on login button
     Then User navigated to the homepage and verify welcome text
