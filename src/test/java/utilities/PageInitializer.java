@@ -2,6 +2,7 @@ package utilities;
 
 import pagesClass.CardioPage;
 import pagesClass.HomePage_Page;
+import pagesClass.LogInPage;
 import pagesClass.MyAccountPage;
 import pagesClass.SignUpPage;
 import pagesClass.eBikesPage;
@@ -13,7 +14,7 @@ public class PageInitializer extends Driver{
 	public static CardioPage CT;
 	public static eBikesPage eBP;
 	public static SignUpPage sPage;
-	
+	public static LogInPage LgP;
 
 	
 	
@@ -24,6 +25,7 @@ public class PageInitializer extends Driver{
 		CT = new CardioPage();
 		eBP = new eBikesPage();
 		sPage = new SignUpPage();
+		LgP =new LogInPage();
 	}
 	
 	
