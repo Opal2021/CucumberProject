@@ -1,13 +1,16 @@
 package stepDefinitions;
 
-import org.apache.http.util.Asserts;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import junit.framework.Assert;
 import utilities.CommonMethods;
 import utilities.Driver;
 
@@ -33,7 +36,7 @@ public class CCB_600_CardioFunctionality extends CommonMethods{
 		String actualResult = Driver.getDriver().getTitle();
 		
 		
-		System.out.println( "This is the title : " + actualResult);
+		System.out.println( "THIS IS THE TITLE : " + actualResult);
 		
 		Assert.assertEquals(expectedResult, actualResult);
 		
@@ -43,6 +46,10 @@ public class CCB_600_CardioFunctionality extends CommonMethods{
 	@Given("user is on the bikes page")
 	public void user_is_on_the_bikes_page() {
 		CT.CardioTab.click();
+		WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 3);
+		
+		wait.until(ExpectedConditions.visibilityOf(CT.bikePic));
+		
 		CT.bikePic.click();
 
 	}
@@ -51,22 +58,20 @@ public class CCB_600_CardioFunctionality extends CommonMethods{
 	@When("adds first item of bike to the cart")
 	public void adds_first_item_of_bike_to_the_cart() {
 	
+		CT.addToCart.click();
 	}
 
 	@Then("carts page should have the bike added")
 	public void carts_page_should_have_the_bike_added() {
-	
+		CT.checkoutPage.click();
 	}
 	
-	
-	
-	
-	
-	
 
+	
 	@Given("user is on the Rowers page")
 	public void user_is_on_the_Rowers_page() {
-
+		CT.CardioTab.click();
+		CT.rowers.click();
 	}
 
 	@When("user clicks on sort by")

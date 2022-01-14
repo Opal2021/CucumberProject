@@ -25,6 +25,16 @@ public class CardioPage {
 	
 	@FindBy(xpath = "//*[@id=\"searchApp\"]/div[4]/div[1]/div[2]/a")
 	public WebElement bikePic;
+	
+	@FindBy(xpath="//*[@id=\"searchApp\"]/div[9]/div[2]/div[2]/div[2]/div[5]/div/form/div/button")
+	public WebElement addToCart;
+	
+	@FindBy(xpath="//*[@id=\"sidebar_cart_preview\"]/div[2]/div[3]/button")
+	public WebElement checkoutPage;
+	
+	@FindBy(xpath ="//*[@id=\"searchApp\"]/div[4]/div[4]/div[2]/a")
+	public WebElement rowers;
+	
 
 	
 }

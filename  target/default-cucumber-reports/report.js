@@ -1,90 +1,61 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/CCB_100_SignUpFunctionality.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/CCB_600_CardioFunctionality.feature");
 formatter.feature({
-  "name": "Verify SignUp Functionality",
+  "name": "Cardio Page functionality",
   "description": "",
-  "keyword": "Feature",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Rowers sort by drop down button",
+  "description": "",
+  "keyword": "Scenario",
   "tags": [
     {
-      "name": "@SmokeTest"
+      "name": "@tag6"
     }
   ]
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "User Navigates to Fitness Avenue website registration page",
+  "name": "user is on the Rowers page",
   "keyword": "Given "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "CCB_600_CardioFunctionality.user_is_on_the_Rowers_page()"
 });
-formatter.scenario({
-  "name": "Verify user can register with new valid email",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@SmokeTest"
-    },
-    {
-      "name": "@tag8"
-    }
-  ]
+formatter.result({
+  "status": "passed"
 });
 formatter.step({
-  "name": "User enters new valid email and creates password",
+  "name": "user clicks on sort by",
   "keyword": "When "
 });
-formatter.match({});
+formatter.match({
+  "location": "CCB_600_CardioFunctionality.user_clicks_on_sort_by()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "User completes billing information",
+  "name": "changes the price to Asc",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "CCB_600_CardioFunctionality.changes_the_price_to_Asc()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "User validates Im not robot",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "User clicks Register button",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "User is navigated to HomePage",
+  "name": "user should be able to see all bikes in ascending order",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "CCB_600_CardioFunctionality.user_should_be_able_to_see_all_bikes_in_ascending_order()"
 });
-formatter.step({
-  "name": "User should see MyAccount button on Homepage",
-  "keyword": "And "
-});
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
