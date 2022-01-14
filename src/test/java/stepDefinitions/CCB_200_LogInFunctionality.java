@@ -14,7 +14,7 @@ public class CCB_200_LogInFunctionality extends CommonMethods {
 	  
 	}
 
-	@When("User click on login button on the top right")
+	@When("User click on login tab on the top right")
 	public void user_click_on_login_button_on_the_top_right() {
 
 	}
@@ -34,28 +34,33 @@ public class CCB_200_LogInFunctionality extends CommonMethods {
 	
 	}
  ////////////////////////////////
-	@When("User log in with invalid email and invalid password")
+	@When("User click on login tab on the top right")
+	public void user_click_on_login_tab() {
+	   
+	}
+	@And("User log in with invalid email and invalid password")
 	public void user_log_in_with_invalid_email_and_invalid_password() {
 	
 	}
 
-	@And("User should see invalid log. displayed on")
+	@Then("User should see invalid log. displayed on")
 	public void user_should_see_invalid_log_displayed_on() {
 	  
 	}
 ///////////////////////////////////////////////
-	@When("User leave the email {string} and password {string} field blank")
-	public void user_leave_the_email_and_password_field_blank(String string, String string2) {
-	 
+	
+	@When("User click on login tab on the top right")
+	public void user_click_on_login_tab_on_the_top_right() {
+	    
 	}
-
-	@When("User click on login button")
+	@And("User click on login button")
 	public void user_click_on_login_button() {
 
 	}
 
-	@When("User should see Your Username and Password are required. displayed on")
+	@Then("User should see Your Username and Password are required. displayed on")
 	public void user_should_see_Your_Username_and_Password_are_required_displayed_on() {
 	
 	}
+	
 	}
