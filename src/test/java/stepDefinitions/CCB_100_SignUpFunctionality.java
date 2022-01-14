@@ -3,67 +3,46 @@ package stepDefinitions;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import utilities.CommonMethods;
+import utilities.ConfigurationReader;
 
-public class CCB_100_SignUpFunctionality {
+public class CCB_100_SignUpFunctionality extends CommonMethods{
 
-	@Given("User Navigate to Fitness Avenue websit registration page")
-	public void user_Navigate_to_Fitness_Avenue_websit_registration_page() {
+	@Given("User Navigates to Fitness Avenue website registration page")
+	public void user_Navigates_to_Fitness_Avenue_website_registration_page() {
+//	   sPage.signUpBtn.click;
+	}
+
+	@When("User enters new valid email and creates password")
+	public void user_enters_new_valid_email_and_creates_password() {
+//		sPage.EmailField.sendKeys(ConfigurationReader.getProperty(""));
+	    
+	}
+
+	@When("User completes billing information")
+	public void user_completes_billing_information() {
+	    
+	}
+
+	@When("User validates Im not robot")
+	public void user_validates_Im_not_robot() {
+	    
+	}
+
+	@When("User clicks Register button")
+	public void user_clicks_Register_button() {
+	    
+	}
+
+	@Then("User is navigated to HomePage")
+	public void user_is_navigated_to_HomePage() {
+	    
+	}
+
+	@Then("User should see MyAccount button on Homepage")
+	public void user_should_see_MyAccount_button_on_Homepage() {
 	   
 	}
-
-	@When("User using valid email and password")
-	public void user_using_valid_email_and_password() {
-	   
-	}
-
-	@When("User able to  Click {string} button")
-	public void user_able_to_Click_button(String string) {
-	
-	}
-
-	@Then("User should be taken to the homePage")
-	public void user_should_be_taken_to_the_homePage() {
-
-
-	}
-
-	@Then("User should see welcome,first name{string}MyAccount' on the top of HomePage")
-	public void user_should_see_welcome_first_name_MyAccount_on_the_top_of_HomePage(String string) {
-
-
-	}
-
-	@When("User Enter email that was registered before")
-	public void user_Enter_email_that_was_registered_before() {
-
-
-	}
-
-	@Then("User unable to  Click {string} button")
-	public void user_unable_to_Click_button(String string) {
-	   
-	}
-
-	@Then("User get Message {string}")
-	public void user_get_Message(String string) {
-	   
-	}
-
-	@When("User Entering valid email that was not used before without firstname")
-	public void user_Entering_valid_email_that_was_not_used_before_without_firstname() {
-	   
-	}
-
-	@Then("User unable to see HomePage")
-	public void user_unable_to_see_HomePage() {
-	   
-	}
-
-	@Then("User get Message {string}is display on Sign up page")
-	public void user_get_Message_is_display_on_Sign_up_page(String string) {
-	 
-	}
-
 
 	
 }
