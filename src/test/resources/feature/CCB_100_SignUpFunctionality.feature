@@ -20,18 +20,18 @@
 Feature: Verify SignUp Functionality
 
 Background: 
-            A user is able to login with a valid username/password
- 
-  @tag1
-  Scenario: Verify user can registetrs for the first time 
-    Given User Navigate to Fitness Avenue websit registration page
-    When User using valid email and password
-    And User able to  Click "Register" button
-   Then User should be taken to the homePage
-    And User should see welcome,first name' next to 'MyAccount' on the top of HomePage
+      Given User Navigates to Fitness Avenue website registration page 
+       
+  @tag8
+  Scenario: Verify user can register with new valid email 
+    When User enters new valid email and creates password
+    And User completes billing information
+    And User validates Im not robot
+    And User clicks Register button
+   Then User is navigated to HomePage
+    And User should see MyAccount button on Homepage 
      
-   
-    
+       
      @tag1
   Scenario: Verify user registetrs using valid email  
     Given User Navigate to Fitness Avenue websit registration page

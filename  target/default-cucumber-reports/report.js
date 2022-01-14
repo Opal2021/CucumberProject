@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/CCB_500_eBikesFunctionality.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/CCB_100_SignUpFunctionality.feature");
 formatter.feature({
-  "name": "Verify eBikes Functionality",
+  "name": "Verify SignUp Functionality",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -9,8 +9,24 @@ formatter.feature({
     }
   ]
 });
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User Navigates to Fitness Avenue website registration page",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
 formatter.scenario({
-  "name": "Verify user can add item to cart on eBikes page",
+  "name": "Verify user can register with new valid email",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -18,52 +34,57 @@ formatter.scenario({
       "name": "@SmokeTest"
     },
     {
-      "name": "@tag1"
+      "name": "@tag8"
     }
   ]
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "User navigates to ebikes page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CCB_500_EbikesFunctionality.user_navigates_to_ebikes_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User clicks on Add to cart button",
+  "name": "User enters new valid email and creates password",
   "keyword": "When "
 });
-formatter.match({
-  "location": "CCB_500_EbikesFunctionality.user_clicks_on_Add_to_cart_button()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "User clicks on Checkout button",
+  "name": "User completes billing information",
   "keyword": "And "
 });
-formatter.match({
-  "location": "CCB_500_EbikesFunctionality.user_clicks_on_Checkout_button()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "User is on Shopping cart page",
+  "name": "User validates Im not robot",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User clicks Register button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User is navigated to HomePage",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "CCB_500_EbikesFunctionality.user_is_on_Shopping_cart_page()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User should see MyAccount button on Homepage",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.after({
   "status": "passed"
