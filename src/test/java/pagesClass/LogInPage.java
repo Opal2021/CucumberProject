@@ -29,7 +29,9 @@ public class LogInPage {
 	
 	public WebElement LoginButton;
 
-
+@FindBy (xpath="//span[@class='welcome-message']")
+	
+	public WebElement WelcomeMessage;
 
 
 public void LogIn_ccb_200 (){
