@@ -8,12 +8,11 @@ public class CCB_100_SignUpFunctionality {
 
 	@Given("User Navigate to Fitness Avenue websit registration page")
 	public void user_Navigate_to_Fitness_Avenue_websit_registration_page() {
-	   
 	}
 
 	@When("User using valid email and password")
 	public void user_using_valid_email_and_password() {
-	   
+	
 	}
 
 	@When("User able to  Click {string} button")
@@ -53,7 +52,7 @@ public class CCB_100_SignUpFunctionality {
 	public void user_Entering_valid_email_that_was_not_used_before_without_firstname() {
 	   
 	}
-
+//hhh//
 	@Then("User unable to see HomePage")
 	public void user_unable_to_see_HomePage() {
 	   

@@ -16,31 +16,42 @@ public class SignUpPage {
 	
 		@FindBy(id="email")
 	 	public WebElement EmailField ;
-		
+		//test//
 		@FindBy(id="password")
-	 	public WebElement passwordField ;
+	 	public WebElement Pasw;
 		
-// 		@FindBy(id= )
-// 	 	public WebElement   ;
-//		
+ 		@FindBy(id="password_confirmation")
+  	 	public WebElement passwordConfirmation  ;
+ 	
+ 		@FindBy(id="first_name")
+  	 	public WebElement firstName  ;
  		
+ 		@FindBy(id="last_name")
+  	 	public WebElement lastName  ;
+ 		 
+ 		@FindBy(id="company")
+	 	public WebElement CompName ;
  		
- 		//input[@id='password_confirmation']
+ 		@FindBy(id="billing_address1")
+	 	public WebElement Address ;
  		
- 		
-//		@FindBy(id="email")
-//	 	public WebElement EmailField ;
-//		@FindBy(id="email")
-//	 	public WebElement EmailField ;
-//		@FindBy(id="email")
-//	 	public WebElement EmailField ;
-//		@FindBy(id="email")
-//	 	public WebElement EmailField ;
-//		@FindBy(id="email")
-//	 	public WebElement EmailField ;
-//		
+ 		@FindBy(id="billing_city")
+	 	public WebElement City   ;
 		
-		//input[@id='password']
+ 		@FindBy(id="billing_country_code")
+	 	public WebElement Country  ;
 		
+ 		@FindBy(id="billing_province_state")
+	 	public WebElement Statename   ;
+ 		
+ 		
+ 		@FindBy(id="billing_phone")
+	 	public WebElement Phone  ;
+ 		
+ 		
+ 		@FindBy(xpath="//button[normalize-space()='Register']")
+	 	public WebElement RegisterButton  ;
+ 		
+ 		
 	
 }
