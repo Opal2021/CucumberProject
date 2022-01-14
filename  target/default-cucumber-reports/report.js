@@ -1,8 +1,13 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/CCB_300_MyAccountFunctionality.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/CCB_400_HomePageFunctionality.feature");
 formatter.feature({
-  "name": "Verify function and data on MyAccount tab",
+  "name": "Verify Home Page functionality",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@SmokeTest4"
+    }
+  ]
 });
 formatter.background({
   "name": "",
@@ -13,174 +18,158 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "A user is able to login with a valid username/password",
+  "name": "A user is on the Home Page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
+  "location": "CCB_400_HomePageFunctionality.a_user_is_on_the_Home_Page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Verify the  information in Billing session that successfully save",
+  "name": "Verify home page has four sliders only",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@SmokeTest4"
+    }
+  ]
 });
 formatter.step({
-  "name": "A user navigates to My Account tab",
+  "name": "A user click to the scroll button on right side",
   "keyword": "When "
 });
 formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_navigates_to_My_Account_tab()"
+  "location": "CCB_400_HomePageFunctionality.a_user_click_to_the_scroll_button_on_right_side()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "A user is able to change the info in address fields box to \"5678\"",
+  "name": "A user is able verify Home page has four sliders only",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CCB_400_HomePageFunctionality.a_user_is_able_verify_Home_page_has_four_sliders_only()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "A user is on the Home Page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CCB_400_HomePageFunctionality.a_user_is_on_the_Home_Page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify home page has five images under sliders",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@SmokeTest4"
+    }
+  ]
+});
+formatter.step({
+  "name": "A user click to the images",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CCB_400_HomePageFunctionality.a_user_click_to_the_images()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "A user is able to verify Home page has five images",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CCB_400_HomePageFunctionality.a_user_is_able_to_verify_Home_page_has_five_images()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "A user is on the Home Page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CCB_400_HomePageFunctionality.a_user_is_on_the_Home_Page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify send a keyword to the keywords successfully",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@SmokeTest4"
+    }
+  ]
+});
+formatter.step({
+  "name": "A user is send key to the keyword field \"BIKE\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CCB_400_HomePageFunctionality.a_user_is_send_key_to_the_keyword_field_(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "A user click enters",
   "keyword": "And "
 });
 formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_change_the_info_in_address_fields_box_to(String)"
+  "location": "CCB_400_HomePageFunctionality.a_user_click_enters()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "A user should successfully verify a message Your details has been save",
+  "name": "A user successfully verifies a message",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_should_successfully_verify_a_message_Your_details_has_been_save()"
+  "location": "CCB_400_HomePageFunctionality.a_user_successfully_verifies_a_message()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.after({
   "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "A user is able to login with a valid username/password",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Verify radio button is selected in Filter session on Web Orders Tap.",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "name": "A user is navigate to Orders Tab",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_is_navigate_to_Orders_Tab()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "A user is able to verify if Order Number is selected",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_verify_if_Order_Number_is_selected()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "A user is able to login with a valid username/password",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_is_able_to_login_with_a_valid_username_password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Verify adding favorite part number on Favorites Tap successfully.",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "name": "A user is navigates to Favorite Tab.",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_is_navigates_to_Favorite_Tab()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "A user enters part number in the fields.",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_enters_part_number_in_the_fields()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "A user successfully verifies a message Product Added Successfully",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CCB_300_MyAccountFunctionality.a_user_successfully_verifies_a_message_Product_Added_Successfully()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.uri("src/test/resources/feature/CCB_400_HomePageFunctionality.feature");
-formatter.feature({
-  "name": "Verify function Home Page.",
-  "description": "",
-  "keyword": "Feature"
-});
-formatter.background({
-  "name": "",
-  "description": "  Given: A user is able to login with a valid username/password.",
-  "keyword": "Background"
-});
-formatter.background({
-  "name": "",
-  "description": "  Given: A user is able to login with a valid username/password.",
-  "keyword": "Background"
-});
-formatter.background({
-  "name": "",
-  "description": "  Given: A user is able to login with a valid username/password.",
-  "keyword": "Background"
 });
 });
