@@ -35,6 +35,9 @@ public class CardioPage {
 	@FindBy(xpath ="//*[@id=\"searchApp\"]/div[4]/div[4]/div[2]/a")
 	public WebElement rowers;
 	
+	@FindBy(xpath="//*[@id=\"searchApp\"]/div[6]/select")
+	public WebElement sortByBox;
+	
 
 	
 }
