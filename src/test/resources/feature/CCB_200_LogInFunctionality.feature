@@ -12,12 +12,12 @@ Feature: Verify LogIn Functionality
 
   Scenario Outline: Verify log in functionality with invalid credencials
     When User click on login tab 
-    And User log in with invalid email and invalid password
+    And User log in with invalid <email> and invalid <password>
     Then User should see invalid log. displayed on
 
     Examples: 
-      | username         | password  |
-      | abc123@gmail.com | 111222333 |
+      |email           | password |
+      |abc123@gmail.com|111222333 |
 
   Scenario: Verify log in functionality without any credencials
     When User click on login tab on the top right
