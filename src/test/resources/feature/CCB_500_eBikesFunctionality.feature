@@ -16,40 +16,37 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@SmokeTest
+@SmokeTestNadia
 Feature: Verify eBikes Functionality
+
+Background: 
+ Given User navigates to ebikes page
  
-  @tag1
-  Scenario: Verify user can add item to cart on eBikes page 
-    Given User navigates to ebikes page
+
+  Scenario: Verify user can add item to cart on eBikes page    
     When User clicks on Add to cart button 
     And User clicks on Checkout button
     Then User is on Shopping cart page
    
-  
-  @tag2
-  Scenario: Verify user can delete item from shopping cart  
-    Given User is on ebikes page
+    Scenario: Verify user can delete item from shopping cart  
     When User clicks on Add to cart button 
     And User clicks on Checkout button
     And User removes item from Shopping cart
     Then User accepts alert message
     And Shopping cart is empty 
     
-    @tag2
-  Scenario: Verify user cannot add to cart out-of-stock items  
-    Given User is on ebikes page
+   Scenario: Verify user cannot add to cart out-of-stock items  
     When User selects out of stock item   
-    Then User cannot see add to card button   
+    Then User cannot see add to card button     
    
    
 
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+  #Scenario Outline: Title of your scenario outline
+    #Given I want to write a step with <name>
+    #When I check for the <value> in step
+    #Then I verify the <status> in step
+#
+    #Examples: 
+      #| name  | value | status  |
+      #| name1 |     5 | success |
+      #| name2 |     7 | Fail    |
