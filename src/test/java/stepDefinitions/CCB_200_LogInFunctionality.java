@@ -30,9 +30,11 @@ public void user_log_in_with_valid_email_and_password() {
 
 @And("User navigated to the homepage and verify welcome text")
 public void user_navigated_to_the_homepage_and_verify_welcome_text() {
+	String ActualText = LgP.WelcomeMessage.getText();
 	String expectedtext ="Welcome, Jane";
+	Assert.assertEquals(expectedtext, ActualText);
 	
-}
+	}
 
 @And("User click log out")
 public void user_click_log_out() {
@@ -50,16 +52,19 @@ public void user_should_see_successfully_logout_message_displayed_on() {
 ///////////////////////// S2
 @When("User log in with invalid email and invalid password")
 public void user_log_in_with_invalid_email_and_invalid_password() {
-	LgP.EmailFields.sendKeys(ConfigurationReader.getProperty("123abc@gmail.com"));
-	LgP.PasswordFields.sendKeys(ConfigurationReader.getProperty("111222333"));
+	LgP.EmailFields.sendKeys(ConfigurationReader.getProperty("InvalidEmail"));
+	LgP.PasswordFields.sendKeys(ConfigurationReader.getProperty("InvalidPassword"));
 	LgP.LoginButton.click();
 	
 }
 
-@Then("User should see invalid log. displayed on")
+@Then("User should see invalid logIn. displayed on")
 public void user_should_see_invalid_log_displayed_on() {
+	String ActualText = LgP.InvalidlogInMsg.getText();
+	String expectedtext ="Invalid Login";
+	Assert.assertEquals(expectedtext, ActualText);
 	
-	//span[@class='error']
+	
 	
 }
 ///////////////////////////S3
@@ -73,7 +78,13 @@ public void user_click_on_login_button() {
 @Then("User should see Your Username and Password are required. displayed on")
 public void user_should_see_Your_Username_and_Password_are_required_displayed_on() {
 	
-	//span[@class='error']
+	
+	
+	String ActualText = LgP.EmptyLogInMsg.getText();
+	String expectedtext ="Your Username and Password are required.";
+	Assert.assertEquals(expectedtext, ActualText);
+	
+	
 
 }
 
