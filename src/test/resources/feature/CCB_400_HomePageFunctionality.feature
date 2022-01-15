@@ -17,7 +17,7 @@
 ## (Comments)
 #Sample Feature Definition Template
 
- @SmokeTest4
+@SmokeTest4
   Feature: Verify Home Page functionality
   
   
@@ -30,7 +30,7 @@
   When A user click to the scroll button on right side
   Then A user is able verify Home page has four sliders only
    
-   
+ 
   Scenario: Verify home page has five images under sliders
   
   When A user click to the images

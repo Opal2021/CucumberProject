@@ -17,7 +17,7 @@ import cucumber.api.junit.Cucumber;
 		features = "src/test/resources/feature/",
 		glue     = "stepDefinitions",
 		dryRun   = false,
-		tags     =  "@tag6"// "@SmokeTest4"
+		tags     ="@SmokeTest4"//"@tag10"
 
 				
 )
@@ -26,4 +26,4 @@ public class CuckesRunner {
 		
 		
 	
-}
+}	
