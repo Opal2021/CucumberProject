@@ -2,24 +2,19 @@
 Feature: Verify LogIn Functionality
 
   Background: 
-    Given User navigates to Fitness Avenue site
+    Given User navigates to LogIn Page
 
   Scenario: Verify log in functionality with valid credencials
-    When User click on login tab on the top right
-    And User log in with valid email and password
+    When User log in with valid email and password
     And User navigated to the homepage and verify welcome text
-    Then User click log out
+    And User click log out
+    Then User should see successfully logout message displayed on
 
   Scenario Outline: Verify log in functionality with invalid credencials
-    When User click on login tab 
-    And User log in with invalid <email> and invalid <password>
+    When User log in with invalid email and invalid password
     Then User should see invalid log. displayed on
 
-    Examples: 
-      |email           | password |
-      |abc123@gmail.com|111222333 |
 
   Scenario: Verify log in functionality without any credencials
-    When User click on login tab on the top right
-    And User click on login button
+    When User click on login button
     Then User should see Your Username and Password are required. displayed on

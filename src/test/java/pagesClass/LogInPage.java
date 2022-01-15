@@ -14,8 +14,7 @@ public class LogInPage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 
-	
-	//abc123
+	// abc123
 	@FindBy(xpath = "//*[@id=\"header\"]/div[4]/a[1]")
 
 	public WebElement LoginTab;
@@ -36,14 +35,10 @@ public class LogInPage {
 
 	public WebElement WelcomeMessage;
 
-	public void LogIn_ccb_200() {
-		
+	@FindBy(xpath = "//a[text( )='Logout']")
 
-		LoginTab.click();
-		EmailFields.sendKeys(ConfigurationReader.getProperty("Email_200"));
-		PasswordFields.sendKeys(ConfigurationReader.getProperty("Password_200"));
-		LoginButton.click();
-
-	}
-
+	public WebElement LogOutButton;
+	
+	
+	
 }
