@@ -39,6 +39,16 @@ public class LogInPage {
 
 	public WebElement LogOutButton;
 	
+	@FindBy(xpath = "//span[@class='error']")
+
+	public WebElement InvalidlogInMsg;
+	
+	@FindBy(xpath = "//span[@class='error']")
+
+	public WebElement EmptyLogInMsg;
+	
+	
+	
 	
 	
 }
