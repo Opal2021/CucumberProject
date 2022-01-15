@@ -1,21 +1,26 @@
 package stepDefinitions;
 
-import cucumber.api.PendingException;
+
+import org.junit.Assert;
+
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import junit.framework.Assert;
 import utilities.CommonMethods;
 import utilities.ConfigurationReader;
+import utilities.Driver;
 
 public class CCB_400_HomePageFunctionality extends CommonMethods{
 
-	
 
 		@Given("A user is on the Home Page")
 		public void a_user_is_on_the_Home_Page() {
-	    MyP.LogIn();
+
+			String expectUrl = "https://www.fitnessavenue.ca/";
+			String actualResult = Driver.getDriver().getCurrentUrl();
+			
+			Assert.assertEquals(expectUrl, actualResult);
 		}
 
 		@When("A user click to the scroll button on right side")
@@ -30,8 +35,8 @@ public class CCB_400_HomePageFunctionality extends CommonMethods{
 
 		@Then("A user is able verify Home page has four sliders only")
 		public void a_user_is_able_verify_Home_page_has_four_sliders_only() {
-		int expectResult = 4;
-		int ActualResult = HpP.allSliders.size();
+		     int expectResult = 4;
+		     int ActualResult = HpP.allSliders.size();
 		     
 		     Assert.assertEquals(expectResult, ActualResult);	
 			
@@ -40,7 +45,7 @@ public class CCB_400_HomePageFunctionality extends CommonMethods{
 
 		@When("A user click to the images")
 		public void a_user_click_to_the_images() {
-		int numImages = HpP.allImages.size();
+		    int numImages = HpP.allImages.size();
 			System.out.println("This homepage has "+numImages+" Images");
 	   
 			
@@ -74,12 +79,10 @@ public class CCB_400_HomePageFunctionality extends CommonMethods{
 			String expectResult2 = "XFORM Fitness BK70 Spin Bike";
 		    String ActualResult2 = HpP.ItemMassege.getText();
 		     
-		     Assert.assertEquals(expectResult2, ActualResult2);	  
+		    Assert.assertEquals(expectResult2, ActualResult2);	  
 			
 		}
 
 
 		  
-		
-
-	}
+}
