@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.PendingException;
@@ -46,7 +47,7 @@ public class CCB_600_CardioFunctionality extends CommonMethods{
 	@Given("user is on the bikes page")
 	public void user_is_on_the_bikes_page() {
 		CT.CardioTab.click();
-		WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 3);
+		WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 2);
 		
 		wait.until(ExpectedConditions.visibilityOf(CT.bikePic));
 		
@@ -76,16 +77,24 @@ public class CCB_600_CardioFunctionality extends CommonMethods{
 
 	@When("user clicks on sort by")
 	public void user_clicks_on_sort_by() {
+		CT.sortByBox.click();
+		
 	
 	}
 
 	@And("changes the price to Asc")
 	public void changes_the_price_to_Asc() {
-	 
+		WebElement asc = Driver.getDriver().findElement(By.xpath("//*[@id=\"searchApp\"]/div[6]/select"));
+		Select select = new Select(asc);
+		select.selectByValue("string:price_asc");
+		
 	}
 
 	@Then("user should be able to see all bikes in ascending order")
 	public void user_should_be_able_to_see_all_bikes_in_ascending_order() {
+		String expectedURL = "https://www.fitnessavenue.ca/category/ZROW/rowers?sortBy=price_asc&limit=12";
+		String actualURL = Driver.getDriver().getCurrentUrl();
+		Assert.assertEquals("CORRECT URL", expectedURL, actualURL);
 	
 	}
 

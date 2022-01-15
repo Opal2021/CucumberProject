@@ -25,12 +25,12 @@ Feature: Cardio Page functionality
 #Background:
 # User is on the cardio page
 
-#@tag6
+@tag6
   Scenario: Threadmill button Functonality
     Given user is on the cardio tab
     When user clicks the treadmill picture
 		Then user should be on the treadmill page
-#@tag6
+@tag6
   Scenario: Add to cart button from Bike page
     Given user is on the bikes page
     When user clicks the treadmill picture

@@ -1,213 +1,165 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/CCB_200_LogInFunctionality.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/CCB_600_CardioFunctionality.feature");
 formatter.feature({
-  "name": "Verify LogIn Functionality",
+  "name": "Cardio Page functionality",
   "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@tag200"
-    }
-  ]
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "User navigates to LogIn Page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CCB_200_LogInFunctionality.user_navigates_to_LogIn_Page()"
-});
-formatter.result({
-  "status": "skipped"
+  "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Verify log in functionality with valid credencials",
+  "name": "Threadmill button Functonality",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@tag200"
+      "name": "@tag6"
     }
   ]
-});
-formatter.step({
-  "name": "User log in with valid email and password",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CCB_200_LogInFunctionality.user_log_in_with_valid_email_and_password()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "User navigated to the homepage and verify welcome text",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "CCB_200_LogInFunctionality.user_navigated_to_the_homepage_and_verify_welcome_text()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "User click log out",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "CCB_200_LogInFunctionality.user_click_log_out()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "User should see sucsussfully logout mesage displayed on",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.scenarioOutline({
-  "name": "Verify log in functionality with invalid credencials",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "User log in with invalid \u003cemail\u003e and invalid \u003cpassword\u003e",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "User should see invalid log. displayed on",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "email",
-        "password"
-      ]
-    },
-    {
-      "cells": [
-        "abc123@gmail.com",
-        "111222333"
-      ]
-    }
-  ]
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "User navigates to LogIn Page",
+  "name": "user is on the cardio tab",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "CCB_200_LogInFunctionality.user_navigates_to_LogIn_Page()"
+  "location": "CCB_600_CardioFunctionality.user_is_on_the_cardio_tab()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "Verify log in functionality with invalid credencials",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@tag200"
-    }
-  ]
+  "status": "passed"
 });
 formatter.step({
-  "name": "User log in with invalid abc123@gmail.com and invalid 111222333",
+  "name": "user clicks the treadmill picture",
   "keyword": "When "
 });
-formatter.match({});
+formatter.match({
+  "location": "CCB_600_CardioFunctionality.user_clicks_the_treadmill_picture()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "User should see invalid log. displayed on",
+  "name": "user should be on the treadmill page",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "CCB_200_LogInFunctionality.user_should_see_invalid_log_displayed_on()"
+  "location": "CCB_600_CardioFunctionality.user_should_be_on_the_treadmill_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
-  "status": "skipped"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "User navigates to LogIn Page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CCB_200_LogInFunctionality.user_navigates_to_LogIn_Page()"
-});
-formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
-  "name": "Verify log in functionality without any credencials",
+  "name": "Add to cart button from Bike page",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@tag200"
+      "name": "@tag6"
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
-  "name": "User click on login button",
+  "name": "user is on the bikes page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CCB_600_CardioFunctionality.user_is_on_the_bikes_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks the treadmill picture",
   "keyword": "When "
 });
 formatter.match({
-  "location": "CCB_200_LogInFunctionality.user_click_on_login_button()"
+  "location": "CCB_600_CardioFunctionality.user_clicks_the_treadmill_picture()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "User should see Your Username and Password are required. displayed on",
+  "name": "adds first item of bike to the cart",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CCB_600_CardioFunctionality.adds_first_item_of_bike_to_the_cart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "carts page should have the bike added",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "CCB_200_LogInFunctionality.user_should_see_Your_Username_and_Password_are_required_displayed_on()"
+  "location": "CCB_600_CardioFunctionality.carts_page_should_have_the_bike_added()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Rowers sort by drop down button",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@tag6"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on the Rowers page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CCB_600_CardioFunctionality.user_is_on_the_Rowers_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on sort by",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CCB_600_CardioFunctionality.user_clicks_on_sort_by()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "changes the price to Asc",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CCB_600_CardioFunctionality.changes_the_price_to_Asc()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should be able to see all bikes in ascending order",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CCB_600_CardioFunctionality.user_should_be_able_to_see_all_bikes_in_ascending_order()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
 });
 });
