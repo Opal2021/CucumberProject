@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -85,13 +86,17 @@ public class CCB_500_EbikesFunctionality extends CommonMethods {
 	public void user_cannot_see_add_to_card_button() {
 
 		try {
-			Driver.getDriver().findElement(By.xpath("//*[@id=\\\"searchApp\\\"]/div[8]/div[2]/div[2]/div[6]/div[5]/div/form/div/button"));
+			Driver.getDriver().findElement(
+					By.xpath("//*[@id='searchApp']/div[8]/div[2]/div[2]/div[6]/div[5]/div/form/div/button"));
 		} catch (Exception e) {
-			
 			e.printStackTrace();
-			System.out.println("Add to cart button is not available");
-		}
+//			System.out.println("Add to cart button is not available");
 
+		}
+		
+		System.out.println("Add to cart button is not available");
+		
+		
 	}
 
 }

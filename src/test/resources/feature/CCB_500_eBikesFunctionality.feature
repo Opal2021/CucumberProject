@@ -27,14 +27,15 @@ Background:
     When User clicks on Add to cart button 
     And User clicks on Checkout button
     Then User is on Shopping cart page
-   
+ 
     Scenario: Verify user can delete item from shopping cart  
     When User clicks on Add to cart button 
     And User clicks on Checkout button
     And User removes item from Shopping cart
     Then User accepts alert message
     And Shopping cart is empty 
-    
+   
+
    Scenario: Verify user cannot add to cart out-of-stock items  
     When User selects out of stock item   
     Then User cannot see add to card button     
