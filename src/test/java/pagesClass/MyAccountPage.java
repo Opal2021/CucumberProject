@@ -50,8 +50,33 @@ public class MyAccountPage {
 	
 	public WebElement AddressFields;
 	
+	@FindBy(xpath="//*[@id=\"zs-my-account-navigation\"]/ul/li[2]/a")
 	
+	public WebElement WebOrdersTab;
 	
+	@FindBy(id="wo_search_column_0")
+	
+	public WebElement OrdersNumRedioBtn;
+	
+	@FindBy(xpath="//*[@id=\"zs-my-account-navigation\"]/ul/li[3]/a")
+	
+	public WebElement FavouritesTab;
+	
+	@FindBy (xpath="//*[@id=\"add-favourite-form\"]/input[2]")
+	
+	public WebElement AddButton;
+	
+	@FindBy (xpath="//*[@id=\"favourites_template\"]/div[3]/span")
+	
+	public WebElement SuccessfullyAddMassage;
+	
+	@FindBy (id="add-product-part-number")
+	
+	public WebElement PartNumFields;
+	
+	@FindBy (xpath="//*[@id=\"7656\"]")
+	
+	public WebElement DeleteButton;
 	
 	public void LogIn() {
 	    	
