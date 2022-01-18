@@ -33,6 +33,7 @@ public void user_navigated_to_the_homepage_and_verify_welcome_text() {
 	String ActualText = LgP.WelcomeMessage.getText();
 	String expectedtext ="Welcome, Jane";
 	Assert.assertEquals(expectedtext, ActualText);
+	System.out.println("Welcome,Jane");
 	
 	}
 
@@ -47,6 +48,7 @@ public void user_should_see_successfully_logout_message_displayed_on() {
 	String actualResult = Driver.getDriver().getCurrentUrl();
 	
 	Assert.assertEquals(expectUrl, actualResult);
+	System.out.println("User logged out ");
 	
 }
 ///////////////////////// S2
@@ -63,6 +65,7 @@ public void user_should_see_invalid_log_displayed_on() {
 	String ActualText = LgP.InvalidlogInMsg.getText();
 	String expectedtext ="Invalid Login";
 	Assert.assertEquals(expectedtext, ActualText);
+	System.out.println("Invalid logIn");
 	
 	
 	
@@ -83,6 +86,7 @@ public void user_should_see_Your_Username_and_Password_are_required_displayed_on
 	String ActualText = LgP.EmptyLogInMsg.getText();
 	String expectedtext ="Your Username and Password are required.";
 	Assert.assertEquals(expectedtext, ActualText);
+	System.out.println("Username and Password required");
 	
 	
 
