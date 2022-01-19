@@ -16,46 +16,32 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@SmokeTest
+# @SmokeTest50
 Feature: Verify SignUp Functionality
 
 Background: 
       Given User Navigates to Fitness Avenue website registration page 
        
-  @tag8
+   
   Scenario: Verify user can register with new valid email 
     When User enters new valid email and creates password
     And User completes billing information
-    And User validates Im not robot
     And User clicks Register button
    Then User is navigated to HomePage
-    And User should see MyAccount button on Homepage 
+    And User should see Welcome Message1 on Homepage
      
        
-     @tag1
+   @SmokeTest50  
   Scenario: Verify user registetrs using valid email  
     Given User Navigate to Fitness Avenue websit registration page
     When User Enter email that was registered before
-    Then User unable to  Click "Register" button
-    And User get Message "Username already exist's in display on Sign up page"
+    Then User get Message Username already exist in display on Sign up page
+   
    
     
-     @tag1
+    
   Scenario: Verify user registetrs without firstname 
     Given User Navigate to Fitness Avenue websit registration page
     When User Entering valid email that was not used before without firstname
-    Then User unable to see HomePage 
-    And User get Message "Your First name is required"is display on Sign up page
-   
+    Then User get Message Your First name is required is display on Sign up page
     
-    
-  #@tag2
-  #Scenario Outline: Title of your scenario outline
-    #Given I want to write a step with <name>
-    #When I check for the <value> in step
-    #Then I verify the <status> in step
-#
-    #Examples: 
-      #| name  | value | status  |
-      #| name1 |     5 | success |
-      #| name2 |     7 | Fail    |

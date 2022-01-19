@@ -8,7 +8,6 @@ import pagesClass.SignUpPage;
 import pagesClass.eBikesPage;
 
 public class PageInitializer extends Driver{
-
 	public static MyAccountPage MyP;
 	public static HomePage_Page HpP;
 	public static CardioPage CT;
@@ -27,6 +26,5 @@ public class PageInitializer extends Driver{
 		sPage = new SignUpPage();
 		LgP =new LogInPage();
 	}
-	
 	
 }
