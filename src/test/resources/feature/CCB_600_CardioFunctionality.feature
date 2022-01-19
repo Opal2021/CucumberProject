@@ -18,25 +18,25 @@
 #Sample Feature Definition Template
 
 #//////////
-
+@tag6
 Feature: Cardio Page functionality
 
 
 #Background:
 # User is on the cardio page
 
-@tag6
+
   Scenario: Threadmill button Functonality
     Given user is on the cardio tab
     When user clicks the treadmill picture
 		Then user should be on the treadmill page
-@tag6
+
   Scenario: Add to cart button from Bike page
     Given user is on the bikes page
     When user clicks the treadmill picture
 		And adds first item of bike to the cart
 		Then carts page should have the bike added
-@tag6		
+	
 	Scenario: Rowers sort by drop down button
     Given user is on the Rowers page
     When user clicks on sort by 
