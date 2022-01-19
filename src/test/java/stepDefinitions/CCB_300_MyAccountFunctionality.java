@@ -17,8 +17,11 @@ public class CCB_300_MyAccountFunctionality extends CommonMethods{
 	
 	@Given("A user is able to login with a valid username\\/password")
 	public void a_user_is_able_to_login_with_a_valid_username_password() {
-	   
-		MyP.LogIn();
+	   LgP.LoginTab.click();
+	   LgP.EmailFields.sendKeys(ConfigurationReader.getProperty("Email_200"));
+		LgP.PasswordFields.sendKeys(ConfigurationReader.getProperty("Password_200"));
+		LgP.LoginButton.click();
+//		MyP.LogIn();
 		
 	}
 
@@ -46,7 +49,7 @@ public class CCB_300_MyAccountFunctionality extends CommonMethods{
 	public void a_user_should_successfully_verify_a_message_Your_details_has_been_save() throws InterruptedException {
 		Alert alert = Driver.getDriver().switchTo().alert();
 	    alert.accept();
-	   // CommonMethods.acceptAlert();
+//	   CommonMethods.acceptAlert();
 		CommonMethods.wait(3);
 		String ActualResult = alert.getText();
 		String ExpectResult = "Your details have been saved!";
@@ -74,7 +77,8 @@ public class CCB_300_MyAccountFunctionality extends CommonMethods{
 	   
 	boolean buttonSelected = MyP.OrdersNumRedioBtn.isSelected();	
 	CommonMethods.wait(3);
-		if(buttonSelected = false) {
+		
+	    if(buttonSelected == false) {
 		MyP.OrdersNumRedioBtn.click();	
 				
 		}
@@ -99,11 +103,11 @@ public class CCB_300_MyAccountFunctionality extends CommonMethods{
 		String ExpectResult = "Product Added Successfully.";
 		Assert.assertEquals(ActualResult, ExpectResult);
 		
-		Actions act = new Actions(Driver.getDriver());
-		act.moveToElement(MyP.DeleteButton).click();
-		CommonMethods.wait(2);
-		CommonMethods.acceptAlert();
-		
+//		Actions act = new Actions(Driver.getDriver());
+//		act.moveToElement(MyP.DeleteButton).click();
+//		CommonMethods.wait(2);
+//		CommonMethods.acceptAlert();
+//		
 	}
 
 

@@ -24,17 +24,17 @@ Background:
 
  		Given A user is able to login with a valid username/password
  
-#Scenario: Verify the  information in Billing session that successfully save
-#
-#		When A user navigates to My Account tab 
-#		And  A user is able to change the info in address fields box to "5678"
-#		Then A user should successfully verify a message Your details has been save
-#
-#Scenario: Verify radio button is selected in Filter session on Web Orders Tap.
-#
-#		When A user is navigate to Orders Tab
-#		Then A user is able to verify if Order Number is selected
- #
+Scenario: Verify the  information in Billing session that successfully save
+
+		When A user navigates to My Account tab 
+		And  A user is able to change the info in address fields box to "5678"
+		Then A user should successfully verify a message Your details has been save
+
+Scenario: Verify radio button is selected in Filter session on Web Orders Tap.
+
+		When A user is navigate to Orders Tab
+		Then A user is able to verify if Order Number is selected
+ 
 Scenario: Verify adding favorite part number on Favorites Tap successfully.
 
 		When A user is navigates to Favorite Tab.
