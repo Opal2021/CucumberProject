@@ -20,9 +20,9 @@
 Feature: Verify SignUp Functionality
 
 Background: 
-      Given User Navigates to Fitness Avenue website registration page 
+   #   Given User Navigates to Fitness Avenue website registration page 
        
-  @SmokeTest50
+   
   Scenario: Verify user can register with new valid email 
     When User enters new valid email and creates password
     And User completes billing information
@@ -31,7 +31,7 @@ Background:
     And User should see Welcome Message1 on Homepage
      
        
-      
+  #SmokeTest50
   Scenario: Verify user registetrs using valid email  
     Given User Navigate to Fitness Avenue websit registration page
     When User Enter email that was registered before
@@ -39,9 +39,8 @@ Background:
    
    
     
-    
+    @SmokeTest60  
   Scenario: Verify user registetrs without firstname 
     Given User Navigate to Fitness Avenue websit registration page
     When User Entering valid email that was not used before without firstname
     Then User get Message Your First name is required is display on Sign up page
-    

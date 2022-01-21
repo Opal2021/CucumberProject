@@ -60,7 +60,7 @@ public class SignUpPage {
 
 	@FindBy(xpath = "//*[@id=\"header\"]/div[4]/a[1]")
 	public WebElement MyAccountButn;
-	// *[@id="user_billing_country"]
+	 
 
 	@FindBy(xpath = "//*[@id=\"user_details_form\"]/fieldset/legend")
 	public WebElement YourInformationMassage;
