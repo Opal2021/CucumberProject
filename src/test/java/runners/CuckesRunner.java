@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
 			"html: target/default-cucumber-reports",
 			"json:target/cucumber.json"
 		},
-		features = "src/test/resources/feature/",
+		features = "./src/test/resources/feature/",
 		glue     = "stepDefinitions",
 		dryRun   = false
 //		tags     =//"@SmokeTest50"//"@Opal"//"@SmokeTestNadia"//"@tag200"//"@SmokeTest4"//"@tag10"
