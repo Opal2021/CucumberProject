@@ -20,26 +20,26 @@
 Feature: Verify SignUp Functionality
 
 Background: 
-      Given User Navigates to Fitness Avenue website registration page 
+   #   Given User Navigates to Fitness Avenue website registration page 
        
    
-  Scenario: Verify user can register with new valid email 
-    When User enters new valid email and creates password
-    And User completes billing information
-    And User clicks Register button
-   Then User is navigated to HomePage
-    And User should see Welcome Message1 on Homepage
+  #Scenario: Verify user can register with new valid email 
+    #When User enters new valid email and creates password
+    #And User completes billing information
+    #And User clicks Register button
+   #Then User is navigated to HomePage
+    #And User should see Welcome Message1 on Homepage
      
        
-   @SmokeTest50  
+ #@SmokeTest60
   Scenario: Verify user registetrs using valid email  
     Given User Navigate to Fitness Avenue websit registration page
     When User Enter email that was registered before
-    Then User get Message Username already exist in display on Sign up page
-   
+    Then User get Message Username isn't available to use
+  
    
     
-    
+  #@SmokeTest60  
   Scenario: Verify user registetrs without firstname 
     Given User Navigate to Fitness Avenue websit registration page
     When User Entering valid email that was not used before without firstname
