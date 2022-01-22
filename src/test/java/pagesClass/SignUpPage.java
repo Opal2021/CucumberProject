@@ -71,20 +71,19 @@ public class SignUpPage {
 	@FindBy(xpath = "//button[normalize-space()='Register']")
 	public WebElement RegisterButton;
 
-//	@FindBy(xpath="//*[@id='NewCustomer']/div[1]/div/table/tbody/tr[6]/td[2]/label");
-//	public WebElement FirstNameMassage;
-	
-//	@FindBy(xpath="//span[@class='error']")
-//	public WebElement UsedEmailMassage;
-	
-	//*[@id="NewCustomer"]/div[1]/div/table/tbody/tr[6]/td[2]/label
-	
-	@FindBy(xpath="//*[@id='NewCustomer']/div[1]/div[1]/span")
+	@FindBy(xpath=" (//*[contains(text(), \"isn't available to use\")])[1]")
  	public WebElement existMassage;
+	
+	@FindBy(xpath="//*[@id=\"NewCustomer\"]/div[1]/div/table/tbody/tr[6]/td[2]/label")
+	public WebElement firstnameMessage;
+	
+
 	
 	
 	public void billingInfo() {
-
+		ValidEmail.sendKeys(ConfigurationReader.getProperty("usedEmail"));
+		ValidPw.sendKeys(ConfigurationReader.getProperty("usedPw"));
+		PwConfirmation2.sendKeys(ConfigurationReader.getProperty("usedPw"));
 		FirstName.sendKeys(ConfigurationReader.getProperty("1stName"));
 		LastName.sendKeys(ConfigurationReader.getProperty("2ndName"));
 		Address.sendKeys(ConfigurationReader.getProperty("address"));
@@ -99,9 +98,9 @@ public class SignUpPage {
 	
 	public void billingInfo2() {
 
-		ValidEmail.sendKeys(ConfigurationReader.getProperty("usedEmail"));
-		ValidPw.sendKeys(ConfigurationReader.getProperty("usedPw"));
-		PwConfirmation2.sendKeys(ConfigurationReader.getProperty("usedPw"));
+		ValidEmail.sendKeys(ConfigurationReader.getProperty("ValidEmail1"));
+		ValidPw.sendKeys(ConfigurationReader.getProperty("ValidPw1"));
+		PwConfirmation2.sendKeys(ConfigurationReader.getProperty("ValidPw1"));
 		LastName.sendKeys(ConfigurationReader.getProperty("2ndName"));
 		Address.sendKeys(ConfigurationReader.getProperty("address"));
 		City.sendKeys(ConfigurationReader.getProperty("city"));

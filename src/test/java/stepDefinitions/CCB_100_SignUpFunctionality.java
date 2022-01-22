@@ -18,16 +18,14 @@ public class CCB_100_SignUpFunctionality extends CommonMethods {
 //	public void user_Navigates_to_Fitness_Avenue_website_registration_page() {
 //
 //		sPage.SignUpButton.click();
-//
 //	}
-//
+	
 //	@When("User enters new valid email and creates password")
 //	public void user_enters_new_valid_email_and_creates_password() {
 //		sPage.ValidEmail.sendKeys(ConfigurationReader.getProperty("ValidEmail"));
 //		sPage.ValidPw.sendKeys(ConfigurationReader.getProperty("ValidPw"));
 //		sPage.PwConfirmation2.sendKeys(ConfigurationReader.getProperty("ValidPw"));
 //	}
-//
 //	@When("User completes billing information")
 //	public void user_completes_billing_information() {
 //		sPage.billingInfo();
@@ -60,24 +58,30 @@ public class CCB_100_SignUpFunctionality extends CommonMethods {
 
 	@When("User Enter email that was registered before")
 	public void user_Enter_email_that_was_registered_before() {
-		sPage.ValidEmail.sendKeys(ConfigurationReader.getProperty("usedEmail"));
+		sPage.billingInfo();
+		CommonMethods.scrollUp(600);
 	}
 
-	@Then("User get Message Username already exist in display on Sign up page")
-	public void user_get_Message_Username_already_exist_in_display_on_Sign_up_page() {
-		String ActualText = sPage.existMassage.getText();
-		String expectedtext = "Username already exists";
-		Assert.assertEquals(expectedtext, ActualText);
-	
+	@Then("User get Message Username isn't available to use")
+	public void user_get_Message_Username_isn_t_available_to_use() {
+
+		String  ActualText = sPage.existMassage.getText();
+		 String expectedText = "isn't available to use";
+	 	 Assert.assertTrue(ActualText.contains(expectedText));
 
 	}
 
-//	@When("User Entering valid email that was not used before without firstname")
-//	public void user_Entering_valid_email_that_was_not_used_before_without_firstname() {
-//    sPage.billingInfo2();
-//	}
-//
-//	@Then("User get Message Your First name is required is display on Sign up page")
-//	public void user_get_Message_Your_First_name_is_required_is_display_on_Sign_up_page() {
-
-	}
+ 	@When("User Entering valid email that was not used before without firstname")
+ 	public void user_Entering_valid_email_that_was_not_used_before_without_firstname() {
+     sPage.billingInfo2();
+ 	}
+ 
+ 	@Then("User get Message Your First name is required is display on Sign up page")
+ 	public void user_get_Message_Your_First_name_is_required_is_display_on_Sign_up_page() {
+ 		 
+ 		 String ActualResult = sPage.firstnameMessage.getText();
+ 		String ExpectResult = "Your first name is required";
+ 		 Assert.assertEquals(ActualResult, ExpectResult);
+ 	}
+		
+}
