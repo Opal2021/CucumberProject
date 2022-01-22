@@ -16,10 +16,10 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-# @SmokeTest50
+ @SmokeTest50
 Feature: Verify SignUp Functionality
 
-Background: 
+#Background: 
    #   Given User Navigates to Fitness Avenue website registration page 
        
    
@@ -31,7 +31,7 @@ Background:
     #And User should see Welcome Message1 on Homepage
      
        
- #@SmokeTest60
+
   Scenario: Verify user registetrs using valid email  
     Given User Navigate to Fitness Avenue websit registration page
     When User Enter email that was registered before
@@ -39,7 +39,7 @@ Background:
   
    
     
-  #@SmokeTest60  
+ 
   Scenario: Verify user registetrs without firstname 
     Given User Navigate to Fitness Avenue websit registration page
     When User Entering valid email that was not used before without firstname
