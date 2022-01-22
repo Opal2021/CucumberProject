@@ -15,9 +15,9 @@ import cucumber.api.junit.Cucumber;
 			"json:target/cucumber.json"
 		},
 		features = "./src/test/resources/features",
-		glue     = {"stepDefinitions","Hooks"}
+		glue     = {"stepDefinitions","Hooks"},
 	//	dryRun   = false
-//		tags     =//"@SmokeTest50"//"@Opal"//"@SmokeTestNadia"//"@tag200"//"@SmokeTest4"//"@tag10"
+		tags     = "@Opal"//"@SmokeTest50"//"@Opal"//"@SmokeTestNadia"//"@tag200"//"@SmokeTest4"//"@tag10"
 
 				
 )
