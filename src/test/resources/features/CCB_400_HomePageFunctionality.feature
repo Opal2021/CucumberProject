@@ -19,7 +19,7 @@
 
 @SmokeTest4
   Feature: Verify Home Page functionality
-  
+ 
   
   Background:
   Given A user is on the Home Page
@@ -29,19 +29,19 @@
   
   When A user click to the scroll button on right side
   Then A user is able verify Home page has four sliders only
-   
- 
+  
   Scenario: Verify home page has five images under sliders
   
   When A user click to the images
   Then A user is able to verify Home page has five images
-
+ 
   
   Scenario: Verify send a keyword to the keywords successfully
   
   When A user is send key to the keyword field "BIKE"
   And A user click enters 
   Then A user successfully verifies a message 
+  
   
 
    

@@ -8,16 +8,21 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
+		
+		
 		plugin = {
 				
 			"pretty",
-		//	"html: target/default-cucumber-reports",
+			"html: target/default-cucumber-reports",
 			"json:target/cucumber.json"
 		},
 		features = "./src/test/resources/features",
 		glue     = {"stepDefinitions","Hooks"},
-		dryRun   = false,
-		tags     = "@SmokeTest50"//"@Opal"//"@SmokeTestNadia"//"@tag200"//"@SmokeTest4"//"@tag10"
+
+		dryRun   = true,
+		tags     ="@SmokeTest4"//"@SmokeTest50"//"@Opal"//"@SmokeTestNadia"//"@tag200"//"@tag10"
+
+		
 
 				
 )
