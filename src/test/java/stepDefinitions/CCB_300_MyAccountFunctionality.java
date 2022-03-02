@@ -13,14 +13,7 @@ import utilities.Driver;
 
 public class CCB_300_MyAccountFunctionality extends CommonMethods{
 
-// Test Ariuna
-// 	
-//Test Ariuna 2
-	
-// Test Ariuna 3
-
-	// Ariuna new
-	//Ariuna new1
+// Ariuna Test 111111
 	
 	
 	
