@@ -13,8 +13,8 @@ import utilities.Driver;
 
 public class CCB_300_MyAccountFunctionality extends CommonMethods{
 
-//Test Opal	
-//Test opal1000000
+// Test Ariuna
+	
 	
 	@Given("A user is able to login with a valid username\\/password")
 	public void a_user_is_able_to_login_with_a_valid_username_password() {
