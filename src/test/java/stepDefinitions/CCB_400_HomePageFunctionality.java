@@ -13,7 +13,7 @@ import utilities.Driver;
 
 public class CCB_400_HomePageFunctionality extends CommonMethods{
 
-//Darima change
+//Darima NEW change
 	
 		@Given("A user is on the Home Page")
 		public void a_user_is_on_the_Home_Page() {
